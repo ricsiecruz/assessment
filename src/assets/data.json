@@ -1,0 +1,46 @@
+{
+    "countries": [
+        {
+            "img": "assets/img/hungary.png",
+            "country": "Hungary",
+            "flag": "assets/img/hungary_flag.png"
+        },
+        {
+            "img": "assets/img/austria.png",
+            "country": "Austria",
+            "flag": "assets/img/austria_flag.png"
+        },
+        {
+            "img": "assets/img/slovakia.png",
+            "country": "Slovakia",
+            "flag": "assets/img/slovakia_flag.png"
+        }
+    ],
+    "sections": [
+        {
+            "img": "assets/img/section1.png",
+            "title": "Tokaj",
+            "subtitle": "28 pincészet"
+        },
+        {
+            "img": "assets/img/section2.png",
+            "title": "Pannon",
+            "subtitle": "12 pincészet"
+        },
+        {
+            "img": "assets/img/section3.png",
+            "title": "Balaton",
+            "subtitle": "41 pincészet"
+        },
+        {
+            "img": "assets/img/section4.png",
+            "title": "Duna",
+            "subtitle": "12 pincészet"
+        },
+        {
+            "img": "assets/img/section5.png",
+            "title": "Felső-Magyarország ",
+            "subtitle": "12 pincészet"
+        }
+    ]
+}

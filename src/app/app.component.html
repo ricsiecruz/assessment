@@ -1,0 +1,74 @@
+<div class="app">
+  <div class="app_title">
+    Fedezd fel a leghíresebb birtokokat és a kis ékszerdoboz családi pincészeteket!
+  </div>
+  <div class="app_subtitle">
+    Már 891 pincészet közül választhatsz.
+  </div>
+  <div class="app_title">
+    Lorem ipsum dolor sit amet consectetur.
+  </div>
+  <div class="app_subtitle">
+    Lorem ipsum dolor sit amet consectetur. Congue blandit mauris at scelerisque nulla.
+  </div>
+  <div class="app_country">
+    <div class="app_country_list" *ngFor="let country of countries">
+      <img src="{{ country.img }}" class="app_country_list_img" >
+      <div class="app_country_list_content">
+        <div class="app_country_list_content_header">
+          <div class="app_country_list_content_header_text">
+            {{ country.country }}
+          </div>
+          <img src="{{ country.flag }}" >
+        </div>
+        <div class="app_country_list_content_details">
+          <img src="assets/img/wineregion.svg" >
+          300
+          <span>cellar</span>
+        </div>
+        <div class="app_country_list_content_details">
+          <img src="assets/img/wine_glass.svg" >
+          350
+          <span>wine tasting</span>
+        </div>
+        <div class="app_country_list_content_details">
+          <img src="assets/img/Wine bottles.svg" >
+          500
+          <span>wine</span>
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+  <div class="app_section">
+    Lorem ipsum dolor sit amet consectetur.
+    <div class="app_section_list">
+      <div class="app_section_list_content" *ngFor="let section of sections">
+        <div><img src="{{ section.img }}" ></div>
+        {{ section.title }}
+        <div>{{ section.subtitle }}</div>
+      </div>
+    </div>
+  </div>
+  <div class="app_section-two">
+    <div class="app_section-two_first">
+      <img src="assets/img/img.png" >
+      <div class="app_section-two_first_text">
+        RÁD SZABVA
+        <div>
+          <span>ÁLLÍTSD ÖSSZE</span> A BORKÓSTOLÓT A SAJÁT ÉS <span>BARÁTAID</span> IGÉNYE SZERINT.
+        </div>
+        <div class="app_section-two_first_text_button">
+          Megnézem az összes  pincészetet<span><img src="assets/img/right arrow.svg" ></span>
+        </div>
+      </div>
+    </div>
+    <div class="app_section-two_second">
+      Legnépszerűbb kategóriák
+      <div class="app_section-two_second_text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat rhoncus facilisis. Aliquam erat volutpat. Proin in porttitor ex, ut hendrerit orci.
+      </div>
+    </div>
+  </div>
+</div>
