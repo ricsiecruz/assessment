@@ -14,6 +14,11 @@ export class AppComponent {
 
   countries: any;
   sections: any;
+  section_two: any;
+  bottles: any;
+  section_five: any;
+  articles: any;
+  carousel: any;
 
   constructor(private http: HttpClient) { }
 
@@ -22,6 +27,11 @@ export class AppComponent {
       console.log('res', res, res.countries);
       this.countries = res.countries;
       this.sections = res.sections;
+      this.section_two = res.section_two;
+      this.bottles = res.bottles;
+      this.section_five = res.section_five;
+      this.articles = res.articles;
+      this.carousel = res.carousel;
     });
   }
 

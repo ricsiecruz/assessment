@@ -1,4 +1,30 @@
 {
+    "carousel": [
+        {
+            "icon": "assets/img/image1.png",
+            "background": "assets/img/pic1.png",
+            "text": "Aranysörte Kézműves Borászat   ",
+            "subtext": "Dörgicse",
+            "rating": "4.7",
+            "review": "48 vélemény"
+        },
+        {
+            "icon": "assets/img/image2.png",
+            "background": "assets/img/pic2.png",
+            "text": "Petrény Winery",
+            "subtext": "Eger",
+            "rating": "4.8",
+            "review": "33 vélemény"
+        },
+        {
+            "icon": "assets/img/image3.png",
+            "background": "assets/img/pic3.png",
+            "text": "Birkás Borház & Bisztró",
+            "subtext": "Fülöpszállás",
+            "rating": "4.9",
+            "review": "128 vélemény"
+        }
+    ],
     "countries": [
         {
             "img": "assets/img/hungary.png",
@@ -41,6 +67,131 @@
             "img": "assets/img/section5.png",
             "title": "Felső-Magyarország ",
             "subtitle": "12 pincészet"
+        }
+    ],
+    "section_two": [
+        {
+            "img": "assets/img/icon1.png",
+            "text": "Budapesti borkóstolók"
+        },
+        {
+            "img": "assets/img/wine.png",
+            "text": "Borvacsora"
+        },
+        {
+            "img": "assets/img/wine2.png",
+            "text": "Etyeki gasztrosétány"
+        },
+        {
+            "img": "assets/img/icon2.png",
+            "text": "Romantikus"
+        }
+    ],
+    "bottles": [
+        {
+            "img": "assets/img/bottle1.png",
+            "bottle": "DOMINIUM",
+            "text": "Sárika Cuvée 2020",
+            "tags": [
+                {
+                    "tag": "Fehér"
+                },
+                {
+                    "tag": "Félédes"
+                },
+                {
+                    "tag": "0,75l"
+                },
+                {
+                    "tag": "13%"
+                }
+            ],
+            "footer": "3 000 Ft"
+        },
+        {
+            "img": "assets/img/bottle2.png",
+            "bottle": "NAÁR",
+            "text": "Száraz Szamorodni 2017",
+            "tags": [
+                {
+                    "tag": "Fehér"
+                },
+                {
+                    "tag": "Szárat"
+                },
+                {
+                    "tag": "0,5l"
+                },
+                {
+                    "tag": "14.5%"
+                }
+            ],
+            "footer": "3 200 Ft"
+        },
+        {
+            "img": "assets/img/bottle3.png",
+            "bottle": "NAÁR",
+            "text": "Száraz Sárgamuskotály 2021",
+            "tags": [
+                {
+                    "tag": "Fehér"
+                },
+                {
+                    "tag": "Szárat"
+                },
+                {
+                    "tag": "0,75l"
+                },
+                {
+                    "tag": "13%"
+                }
+            ],
+            "footer": "2 200 Ft"
+        }
+    ],
+    "section_five": [
+        {
+            "icon": "assets/img/Cancellation.svg",
+            "text": "Ingyenes lemondás",
+            "subtext": "Akár 24 órán belül"
+        },
+        {
+            "icon": "assets/img/wineglass.svg",
+            "text": "Legnagyobb választék",
+            "subtext": "157 pince · 224 borkóstoló · 260 bor"
+        },
+        {
+            "icon": "assets/img/rating.svg",
+            "text": "Valódi értékelések",
+            "subtext": "Nincs zsákbamacska"
+        }
+    ],
+    "articles": [
+        {
+            "avatar": "assets/img/avatar.png",
+            "author": "Lurch Schpellchek",
+            "img": "assets/img/article1.png",
+            "date": "Augusztus 06.",
+            "time": "8 min",
+            "tag": "Utazás"
+        },
+        {
+            "img": "assets/img/article2.png",
+            "date": "Augusztus 12.",
+            "time": "6 min",
+            "tag": "Utazás"
+        },
+        {
+            "img": "assets/img/article3.png",
+            "date": "Augusztus 12.",
+            "time": "6 min",
+            "tag": "Gasztro"
+        },
+        {
+            "img": "assets/img/article4.png",
+            "date": "Augusztus 12.",
+            "time": "6 min",
+            "tag": "Gasztro"
         }
     ]
 }

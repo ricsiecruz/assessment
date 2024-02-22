@@ -5,6 +5,24 @@
   <div class="app_subtitle">
     Már 891 pincészet közül választhatsz.
   </div>
+  <div class="app_carousel">
+    <div class="app_carousel_list">
+      <div *ngFor="let item of carousel">
+        <div class="background-image" [style.backgroundImage]="'url(' + item.background + ')'">
+          <div>
+            <img src="{{ item.icon }}" >
+            <div class="app_carousel_list_text">{{ item.text }}</div>
+            <div>{{ item.subtext }}</div>
+          </div>
+          <div class="app_carousel_list_rating">
+            <img src="../assets/img/star.svg" >
+            {{ item.rating }}
+            {{ item.review }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="app_title">
     Lorem ipsum dolor sit amet consectetur.
   </div>
@@ -69,6 +87,157 @@
       <div class="app_section-two_second_text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat rhoncus facilisis. Aliquam erat volutpat. Proin in porttitor ex, ut hendrerit orci.
       </div>
+      <div class="app_section-two_second_list">
+        <div *ngFor="let section of section_two">
+          <img src="{{ section.img }}" >
+          <span>{{ section.text }}</span>
+        </div>
+      </div>
     </div>
+  </div>
+  <div class="app_section-three">
+    <div class="app_section-three_text">
+      LOREM IPSUM DOLOR
+      <div>
+        <span>Vivamus</span> tellus libero, feugiat in <span>commodo</span> et.
+      </div>
+      <div class="app_section-three_text_subtext">
+        És most 3 évig beváltható!
+      </div>
+      <div class="app_section-two_first_text_button">
+        Tovább az ajándékutalványokhoz<span><img src="assets/img/right arrow.svg" ></span>
+      </div>
+    </div>
+    <img src="assets/img/giftcard.png" >
+  </div>
+  <div class="app_section-four">
+    <div class="app_section-four_text">
+      Lorem ipsum dolor sit amet consectetur
+      Lorem ipsum dolor sit amet consectetur.
+    </div>
+    <div class="app_section-four_subtext">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      <br />
+      Nullam volutpat rhoncus facilisis. Aliquam erat volutpat. Proin in porttitor.
+    </div>
+    <div class="app_section-four_button">
+      Tovább a webshopra
+    </div>
+  </div>
+  <div class="app_section-five">
+    <div class="app_section-five_text">
+      Kiemelt borok
+    </div>
+    <div class="app_section-five_subtext">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat rhoncus facilisis. Aliquam erat volutpat. Proin in porttitor ex, ut hendrerit orci.
+    </div>
+    <div class="app_section-five_bottles">
+      <div class="app_section-five_bottles_card" *ngFor="let bottle of bottles">
+        <img src="{{ bottle.img }}" >
+        <div>
+          {{ bottle.bottle }}
+        </div>
+        <div class="app_section-five_bottles_card_text">
+          {{ bottle.text }}
+        </div>
+        <div class="app_section-five_bottles_card_tags">
+          <div *ngFor="let item of bottle.tags">
+            {{ item.tag }}
+          </div>
+        </div>
+        <div class="app_section-five_bottles_card_footer">
+          {{ bottle.footer }}
+          <img src="../assets/img/cart.svg" >
+        </div>
+      </div>
+    </div>
+    <div class="app_section-five_div">
+      <div class="app_section-five_div_left">
+        miért <span>válasz MINKET</span>?
+        <div>
+          Három jó indokunk is van rá. 
+        </div>
+      </div>
+      <div class="app_section-five_div_right">
+        <div *ngFor="let item of section_five">
+          <img src="{{ item.icon }}" >
+          <b>{{ item.text }}</b>
+          {{ item.subtext }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="app_article">
+    <div class="app_article_text">
+      Cikkek
+      <span>
+        Tovább az összes cikkhez
+        <img src="../assets/img/right arrow.svg" >
+      </span>
+    </div>
+    <div class="app_article_column">
+      <div class="app_article_column_content">
+        <div class="app_article_column_content_left">
+          <img src="{{ articles[0].img }}" class="app_article_column_content_left_img" >
+          <div class="app_article_column_content_left_details">
+            <div class="app_article_column_content_left_details_header">
+              <div class="app_article_column_content_left_details_header_author">
+                <img src="{{ articles[0].avatar }}" >
+                {{ articles[0].author }}
+              </div>
+              <div>
+                <span><img src="../assets/img/calendar.svg" ></span>
+                {{ articles[0].date }}
+              </div>
+              <div>
+                <span><img src="../assets/img/time.svg" ></span>
+                {{ articles[0].time }}
+              </div>
+              <div class="app_article_column_content_left_details_header_tag">{{ articles[0].tag }}</div>
+            </div>
+            <div class="app_article_column_content_left_details_text">
+              Lorem ipsum dolor sit amet consectetur amet iaculis faucibus suspendisse lobortis massa. 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="app_article_column_content">
+        <div class="app_article_column_content_right" *ngFor="let article of articles.slice(1)">
+          <img src="{{ article.img }}" class="app_article_column_content_right_img">
+          <div>
+            <div class="app_article_column_content_right_header">
+              <div>
+                <span><img src="../assets/img/calendar.svg" ></span>
+                {{ article.date }}
+              </div>
+              <div>
+                <div><img src="../assets/img/time.svg" ></div>
+                {{ article.time }}
+              </div>
+              <div class="app_article_column_content_left_details_header_tag">{{ article.tag }}</div>
+            </div>
+            <div class="app_article_column_content_right_text">
+              Lorem ipsum dolor sit amet consectetur amet iaculis faucibus suspendisse lobortis massa. 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="app_section-six">
+    <div class="app_section-six_first">
+      <img src="assets/img/img1.png" >
+      <div class="app_section-six_first_text">
+        LOREM IPSUM DOLOR
+        <div>
+          <span>Vivamus</span> tellus libero, feugiat in <span>commodo</span> et.
+        </div>
+        <div class="app_section-six_first_text_button">
+          Vedd fel velünk a kapcsolatot<span><img src="assets/img/right arrow.svg" ></span>
+        </div>
+      </div>
+    </div>
+    
   </div>
 </div>
